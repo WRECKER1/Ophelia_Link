@@ -25,6 +25,16 @@ public class Player : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("PlayerCollided");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("PlayerTriggerred");
+    }
+
 
     void Update()
     {
