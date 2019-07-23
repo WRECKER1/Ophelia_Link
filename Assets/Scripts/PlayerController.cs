@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         print("Controls Frozen");
         isControlEnabled = false;
+        //gameObject.deathFX.SetActive(true);
     }
 
     private void processTranslation()
