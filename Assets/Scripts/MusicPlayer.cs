@@ -9,4 +9,10 @@ public class MusicPlayer : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
+
+    private void StartDeathSequence()
+    {
+        print("Player dying");
+
+    }
 }

@@ -3,44 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-
-    [Tooltip("In ms^-1")][SerializeField] float speed = 25f;
+    [Header("General")]
+    [Tooltip("In ms^-1")][SerializeField] float controlSpeed = 25f;
     [Tooltip("In m")] [SerializeField] float xRange = 12f;
     [Tooltip("In m")] [SerializeField] float yRange = 10f;
 
-
+    [Header("ScreenPosition")]
     [SerializeField] float positionPitchFactor = -1.5f;
     [SerializeField] float positionYawFactor = 1.9f;
+
+    [Header("ControlThrowBased")]
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -20f;
 
 
     float xThrow;
     float yThrow;
+    bool isControlEnabled = true;
 
     void Start()
     {
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("PlayerCollided");
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("PlayerTriggerred");
-    }
-
-
     void Update()
     {
-        processTranslation();
-        processRotation();
+        if (isControlEnabled)
+        {
+            processTranslation();
+            processRotation();
+        }
 
+    }
+
+    void OnPlayerDeath()        //called by string reference
+    {
+        print("Controls Frozen");
+        isControlEnabled = false;
     }
 
     private void processTranslation()
@@ -48,9 +49,9 @@ public class Player : MonoBehaviour
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
-        float xOffset = xThrow * speed;
+        float xOffset = xThrow * controlSpeed;
         float xOffsetThisFrame = xOffset * Time.deltaTime;
-        float yOffset = yThrow * speed;
+        float yOffset = yThrow * controlSpeed;
         float yOffsetThisFrame = yOffset * Time.deltaTime;
 
         float rawXPos = transform.localPosition.x + xOffsetThisFrame;
