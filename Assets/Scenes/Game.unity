@@ -124,8 +124,6 @@ GameObject:
   - component: {fileID: 149633901}
   - component: {fileID: 149633905}
   - component: {fileID: 149633904}
-  - component: {fileID: 149633903}
-  - component: {fileID: 149633902}
   - component: {fileID: 149633906}
   m_Layer: 0
   m_Name: Ship_03 (1)
@@ -149,34 +147,6 @@ Transform:
   m_Father: {fileID: 1293215901}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -68.787, y: 90.00001, z: 0}
---- !u!65 &149633902
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2148117540190016392, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149633900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664876, y: 0.633128, z: 0.091510944}
-  m_Center: {x: -0.0000019073486, y: -0.0000009536743, z: -0.00000047683716}
---- !u!65 &149633903
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6387584694839909573, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149633900}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6466485, y: 0.63312775, z: 0.09151078}
-  m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
 --- !u!23 &149633904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -254,8 +224,6 @@ GameObject:
   - component: {fileID: 455400075}
   - component: {fileID: 455400079}
   - component: {fileID: 455400078}
-  - component: {fileID: 455400077}
-  - component: {fileID: 455400076}
   - component: {fileID: 455400080}
   m_Layer: 0
   m_Name: Ship_02 (1)
@@ -279,34 +247,6 @@ Transform:
   m_Father: {fileID: 491985927}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 270, y: -90, z: -90}
---- !u!65 &455400076
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9039976020516553957, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455400074}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627087, y: 0.48463205, z: 0.14032474}
-  m_Center: {x: -0.000000044703484, y: 8.881786e-16, z: -0.000000003725291}
---- !u!65 &455400077
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8318523389599332388, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455400074}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627087, y: 0.48463205, z: 0.14032474}
-  m_Center: {x: 0.000000059604645, y: 8.881786e-16, z: -0.000000003725291}
 --- !u!23 &455400078
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -517,7 +457,6 @@ GameObject:
   - component: {fileID: 635759985}
   - component: {fileID: 635759988}
   - component: {fileID: 635759987}
-  - component: {fileID: 635759986}
   - component: {fileID: 635759989}
   m_Layer: 0
   m_Name: Ship_02 (2)
@@ -541,20 +480,6 @@ Transform:
   m_Father: {fileID: 491985927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 270, y: -90, z: -90}
---- !u!65 &635759986
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8318523390868617735, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635759984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627087, y: 0.48463205, z: 0.14032474}
-  m_Center: {x: 0.000000059604645, y: 8.881786e-16, z: -0.000000003725291}
 --- !u!23 &635759987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -626,8 +551,6 @@ GameObject:
   - component: {fileID: 1104857116}
   - component: {fileID: 1104857120}
   - component: {fileID: 1104857119}
-  - component: {fileID: 1104857118}
-  - component: {fileID: 1104857117}
   - component: {fileID: 1104857121}
   m_Layer: 0
   m_Name: Ship_02
@@ -651,34 +574,6 @@ Transform:
   m_Father: {fileID: 491985927}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 270, y: -90, z: -90}
---- !u!65 &1104857117
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5661857631617915947, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104857115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627087, y: 0.48463205, z: 0.14032474}
-  m_Center: {x: -0.000000029802322, y: 8.881786e-16, z: -0.000000003725291}
---- !u!65 &1104857118
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8318523389640248430, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104857115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6627087, y: 0.48463205, z: 0.14032474}
-  m_Center: {x: 0.000000059604645, y: 8.881786e-16, z: -0.000000003725291}
 --- !u!23 &1104857119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -831,7 +726,6 @@ GameObject:
   - component: {fileID: 1483930732}
   - component: {fileID: 1483930735}
   - component: {fileID: 1483930734}
-  - component: {fileID: 1483930733}
   - component: {fileID: 1483930736}
   m_Layer: 0
   m_Name: Ship_03 (2)
@@ -855,20 +749,6 @@ Transform:
   m_Father: {fileID: 1293215901}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -68.399, y: 90.00001, z: 0}
---- !u!65 &1483930733
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6387584694417352087, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483930731}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6466485, y: 0.63312775, z: 0.09151078}
-  m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
 --- !u!23 &1483930734
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1021,8 +901,6 @@ GameObject:
   - component: {fileID: 1974053116}
   - component: {fileID: 1974053120}
   - component: {fileID: 1974053119}
-  - component: {fileID: 1974053118}
-  - component: {fileID: 1974053117}
   - component: {fileID: 1974053121}
   m_Layer: 0
   m_Name: Ship_03
@@ -1046,34 +924,6 @@ Transform:
   m_Father: {fileID: 1293215901}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -68.862, y: 90.00001, z: 0}
---- !u!65 &1974053117
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6792601094629713847, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974053115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.64664876, y: 0.63312787, z: 0.09151095}
-  m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
---- !u!65 &1974053118
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6387584695252543304, guid: aa8ea9bd69f520e47810a1fcd35444b5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5929575730161893621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974053115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6466485, y: 0.63312775, z: 0.09151078}
-  m_Center: {x: -0.0000019073486, y: 0.0000009536743, z: 0.00000047683716}
 --- !u!23 &1974053119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1353,7 +1203,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 415.8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: aa8ea9bd69f520e47810a1fcd35444b5, type: 3}
 --- !u!1001 &6166066257217711153
 PrefabInstance:
