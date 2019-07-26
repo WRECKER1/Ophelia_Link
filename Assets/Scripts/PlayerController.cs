@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In ms^-1")][SerializeField] float controlSpeed = 25f;
     [Tooltip("In m")] [SerializeField] float xRange = 12f;
     [Tooltip("In m")] [SerializeField] float yRange = 10f;
+    [SerializeField] GameObject[] guns;
 
     [Header("ScreenPosition")]
     [SerializeField] float positionPitchFactor = -1.5f;
@@ -32,8 +33,9 @@ public class PlayerController : MonoBehaviour
     {
         if (isControlEnabled)
         {
-            processTranslation();
-            processRotation();
+            ProcessTranslation();
+            ProcessRotation();
+            ProcessFiring();
         }
 
     }
@@ -44,7 +46,7 @@ public class PlayerController : MonoBehaviour
         isControlEnabled = false;
     }
 
-    private void processTranslation()
+    private void ProcessTranslation()
     {
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
@@ -65,7 +67,7 @@ public class PlayerController : MonoBehaviour
                                               transform.localPosition.z);
     }
 
-    private void processRotation()
+    private void ProcessRotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
         float yaw = transform.localPosition.x * positionYawFactor;
@@ -73,5 +75,33 @@ public class PlayerController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch,
                                                    yaw,
                                                    roll);
+    }
+
+    private void ProcessFiring()
+    {
+        if(CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }
